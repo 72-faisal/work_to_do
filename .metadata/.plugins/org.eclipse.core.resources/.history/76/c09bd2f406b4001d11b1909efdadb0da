@@ -1,0 +1,10 @@
+package do_tasks;
+
+public class Count_Number_spaces_letters {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
