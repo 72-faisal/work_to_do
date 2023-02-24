@@ -6,7 +6,7 @@ public class Task_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+<<<<<<< HEAD
 //		Find the Greatest number:
 		
 		int i ,j,k;
@@ -30,7 +30,10 @@ public class Task_1 {
 		}
 		
 		
+=======
+		syso
 
+>>>>>>> f086373d8dc4cc1421c956c67b0e97762b75296a
 	}
 
 }
