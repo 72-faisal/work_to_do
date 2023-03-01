@@ -1,12 +1,12 @@
 package do_tasks;
 
-class Parent {
+class Parent1 {
 	  public void printMessage() {
 	    System.out.println("This is a parent class");
 	  }
 	}
 
-class Child extends Parent {
+class Child extends Parent1 {
 	  public void printMessage() {
 	    System.out.println("This is a child class");
 	  }
@@ -15,7 +15,7 @@ class Child extends Parent {
 
 public class Parent_child_subclass {
 	public static void main(String[] args) {
-	    Parent parent = new Parent();
+	    Parent1 parent = new Parent1();
 	    Child child = new Child();
 	    
 	    
@@ -27,7 +27,7 @@ public class Parent_child_subclass {
 	    child.printMessage();
 
 	    // calling method of parent class by object of child class
-	    Parent childAsParent = new Child();
+	    Parent1 childAsParent = new Child();
 	    childAsParent.printMessage();
 	  }
 }
