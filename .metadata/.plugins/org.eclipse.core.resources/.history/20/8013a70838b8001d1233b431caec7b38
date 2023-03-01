@@ -1,0 +1,37 @@
+package do_tasks;
+
+
+
+
+public class PrintNumber {
+	public static void main(String[] args) {
+	 
+	 
+		
+		    public void printn(int number) {
+		        System.out.println("Printing integer: " + number);
+		    }
+
+		    public void printn(float number) {
+		        System.out.println("Printing float: " + number);
+		    }
+
+		    public void printn(double number) {
+		        System.out.println("Printing double: " + number);
+		    }
+
+		    public void printn(long number) {
+		        System.out.println("Printing long: " + number);
+		    }
+		}
+
+		
+	 
+		PrintNumber printer = new PrintNumber();
+		printer.printn(42);
+		printer.printn(3.14f);
+		printer.printn(2.71828);
+		printer.printn(1234567890L);
+
+	}
+}
