@@ -1,0 +1,62 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import connection.Dbconnection;
+import model.Patientdata;
+
+public class Patientdao {
+
+	public static void insertpatient(Patientdata p) {
+		// TODO Auto-generated method stub
+		try {
+		Connection con=Dbconnection.getconnection();
+		String sql="insert into patient (pname,pemail,ppassword,paddress,pcontact) values(?,?,?,?,?) ";
+		PreparedStatement prt=con.prepareStatement(sql);
+		
+		prt.setString(1,p.getPname());
+		prt.setString(2, p.getPemail());
+		prt.setString(3, p.getPpassword());
+		prt.setString(4, p.getPaddress());
+		prt.setLong(5, p.getPcontact());
+		prt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+		}
+		
+	}
+
+	public static Patientdata Patientlogin(Patientdata p) {
+		Patientdata p1=null;
+		try {
+			Connection con=Dbconnection.getconnection();
+			String sql="select * from patient where pemail=? and ppassword=? ";
+			PreparedStatement prt=con.prepareStatement(sql);
+			prt.setString(1, p.getPemail());
+			prt.setString(2, p.getPpassword());
+			ResultSet rs=prt.executeQuery();
+			if(rs.next()) {
+				p1 = new Patientdata();
+				p1.setPid(rs.getInt("pid"));
+				p1.setPname(rs.getString("pname"));
+				p1.setPemail(rs.getString("pemail"));
+				p1.setPpassword(rs.getString("ppassword"));
+				p1.setPaddress(rs.getString("paddress"));
+				p1.setPcontact(rs.getLong("pcontact"));
+				
+				
+			}
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return p1;
+	}
+
+	
+
+}

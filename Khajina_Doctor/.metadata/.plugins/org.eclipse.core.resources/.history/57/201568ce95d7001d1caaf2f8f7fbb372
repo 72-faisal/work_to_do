@@ -1,0 +1,25 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import connection.Dbconnection;
+
+public class Patientdao {
+
+	public static void insertpatient() {
+		// TODO Auto-generated method stub
+		try {
+		Connection con=Dbconnection.getconnection();
+		String sql="insert into patient pname,pemail,ppassword,paddress,pcontact values(?,?,?,?,?) ";
+		PreparedStatement prt=con.prepareStatement(sql);
+		prt.setString(1, "p.get");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

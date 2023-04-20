@@ -12,6 +12,7 @@ import java.util.Scanner;
 			int num = sc.nextInt();
 			sum += num;
 	        }
+		
 	        int avg =  sum / 5;
 	        System.out.println("Sum: " + sum);
 	        System.out.println("Average: " + avg);

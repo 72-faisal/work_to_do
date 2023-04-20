@@ -18,6 +18,7 @@ public class Hashset_toarray {
 	        for (String element : array) {
 	            System.out.println(element);
 	        }
+	        
 	    }
 	}
 

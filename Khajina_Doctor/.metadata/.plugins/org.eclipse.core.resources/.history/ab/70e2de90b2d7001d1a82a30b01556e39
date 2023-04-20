@@ -1,0 +1,49 @@
+package model;
+
+public class Patientdata {
+	private int pid;
+	private String pname,pemail,ppassword,paddress;
+	private Long pcontact;
+	public int getPid() {
+		return pid;
+	}
+	public void setPid(int pid) {
+		this.pid = pid;
+	}
+	public String getPname() {
+		return pname;
+	}
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+	public String getPemail() {
+		return pemail;
+	}
+	public void setPemail(String pemail) {
+		this.pemail = pemail;
+	}
+	public String getPpassword() {
+		return ppassword;
+	}
+	public void setPpassword(String ppassword) {
+		this.ppassword = ppassword;
+	}
+	public String getPaddress() {
+		return paddress;
+	}
+	public void setPaddress(String paddress) {
+		this.paddress = paddress;
+	}
+	public Long getPcontact() {
+		return pcontact;
+	}
+	public void setPcontact(Long pcontact) {
+		this.pcontact = pcontact;
+	}
+	@Override
+	public String toString() {
+		return "Patientdata [pid=" + pid + ", pname=" + pname + ", pemail=" + pemail + ", ppassword=" + ppassword
+				+ ", paddress=" + paddress + ", pcontact=" + pcontact + "]";
+	}
+	
+}

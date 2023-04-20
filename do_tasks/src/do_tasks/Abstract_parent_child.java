@@ -9,6 +9,7 @@ class FirstSubclass extends Parent {
     }
 }
 
+
 class SecondSubclass extends Parent {
     public void message() {
         System.out.println("This is second subclass");
@@ -17,8 +18,8 @@ class SecondSubclass extends Parent {
 
 public class Abstract_parent_child {
 	public static void main(String[] args) {
-        Parent obj1 = new FirstSubclass();
-        Parent obj2 = new SecondSubclass();
+        FirstSubclass obj1 = new FirstSubclass();
+        SecondSubclass obj2 = new SecondSubclass();
         
         obj1.message();
         obj2.message();

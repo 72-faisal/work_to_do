@@ -1,5 +1,6 @@
 package do_tasks;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
 public class Adding_two_arraylist {
@@ -18,6 +19,10 @@ public class Adding_two_arraylist {
 	        for (String s : list1) {
 	            list2.add(s);
 	        }
+//	        Iterator itr=list1.iterator();
+//	        while(itr.hasNext()) {
+//	        	System.out.println(itr.next());
+//	        }
 
 	        // print the elements of both ArrayLists
 	        System.out.println("List 1: " + list1);

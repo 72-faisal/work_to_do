@@ -1,5 +1,6 @@
 package do_tasks;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
 public class Addfunction_arraylist {
@@ -19,6 +20,10 @@ public class Addfunction_arraylist {
 	        System.out.println("Array list after inserting element at the first position:");
 	        for (String color : colors) {
 	            System.out.println(color);
+	        }
+	        Iterator itr =colors.iterator();
+	        while(itr.hasNext()) {
+	        	System.out.println(itr.next());
 	        }
 	    }
 	}
