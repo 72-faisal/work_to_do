@@ -1,8 +1,0 @@
-package model;
-
-public class Doctordata {
-	private int did;
-	private String dname,demail,dpassword,dhaddress,dcaddress;
-	private long dcontact;
-
-}
